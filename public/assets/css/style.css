@@ -1,0 +1,459 @@
+:root {
+    font-family: 'Outfit', sans-serif;
+    --backgroundColor: #212227;
+    --primaryColor: #B4E4E4;
+    --primaryColorAlter: #F4CDD3;
+    --secondaryColor:#297373;
+    --secondaryColorAlter:#E37884;
+    --white: #fefee2;
+    --black: #010101;
+    background-color: var(--backgroundColor);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* Homepage */
+
+.logo-button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.logo-image {
+    width: 5rem;
+    height: 5rem;
+}
+
+.home-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.home-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-content a {
+    text-decoration: none;
+    color: var(--primaryColor);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.find-instrument,
+.find-track {
+    flex-grow: 1;
+    text-shadow: 1px 1px 7px black;
+}
+
+.find-instrument {
+    background-image: url("../images/find-instrument.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.find-track {
+    background-image: url("../images/find-track.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* End Homepage */
+
+/* Instrument List*/
+
+.instrument-choice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+}
+
+.instrument-choice h1 {
+    color: var(--primaryColor);
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.instrument-form {
+    background-color: var(--secondaryColor);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    box-shadow:0 0 8px black;
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
+    margin-bottom: 12rem;
+    padding-bottom: 2.5rem;
+}
+
+.background-portee {
+    background-image: url(../images/portee.png);
+    background-size: cover;
+    height: 10rem;
+    width: 10rem;
+    flex-grow: 1;
+}
+
+.instrument-input:checked+.instrument-label {
+    background-color: #e2dfdf6b;
+    border: 3px solid;
+    border-color: #e2dfdf6b;
+}
+
+.instrument-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width:45%;
+    margin-left: 3rem;
+}
+
+.instrument-icon {
+    height: 10vh;
+    border-radius: 50%;
+}
+
+.submit-selected-instruments {
+    background-color: rgb(236, 236, 236);
+    font-family: 'Outfit', sans-serif;
+    font-size: 2rem;
+    position: fixed;
+    bottom: 4rem;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 1rem;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.363);
+    border: none;
+}
+/* End Instrument List*/
+
+/* ---------------css results by instruments ------------------*/
+.tracks-results h1 {
+    color: var(--primaryColorAlter);
+    text-align: center;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.644);
+}
+.tracks-list { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tracks-list a {
+    display: block;
+    font-size:large;
+    text-decoration: none;
+    color: var(--primaryColor);
+    padding-top: 1rem;
+    padding-left: 1rem;    
+}
+.tracks-list p {
+    display: block;
+    text-decoration: none;
+    padding-left: 1rem;    
+}
+.track-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--secondaryColor);
+    min-width: 80vw;
+    justify-content: center;
+    margin-bottom: 3rem;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.644);
+}
+
+.track-link a {
+    overflow: hidden;
+}
+/*------------------end css results by instruments---------------*/
+
+/* ---------------css results by musics ------------------*/
+
+.music-results-content h1 {
+    color: var(--primaryColorAlter);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.music-results-list { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-results-instrument {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondaryColor);
+    width: 80vw;
+    margin-bottom: 3rem;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.644);
+}
+.music-results-h2 {
+    align-self: center;
+    font-size:large;
+    text-decoration: none;
+    color: var(--primaryColor);
+    padding-left: 1rem;    
+}
+.music-results-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 14rem;
+    width: 100%;
+    background-size:cover;
+    font-size: 7rem;
+    color: var(--primaryColor);
+    text-shadow: 5px 5px 5px var(--black);
+}
+
+/*------------------end css results by musics---------------*/
+
+
+/* music choice form*/
+.search-music-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.search-music-main h1 {
+    color: var(--primaryColorAlter);
+    text-align: center;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.644);
+}
+.search-music {
+    display: flex;
+    justify-content: center;
+}
+.search-music-label-div {
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+    width: 60vw;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.363);
+    font-size: 1.5rem;
+}
+
+.search-music-label {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+.search-music-input:checked+.search-music-label-div {
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+    padding: 1.5rem;
+    display:flex;
+    flex-grow:1;
+}
+
+.save-button {
+    background-color: var(--primaryColor);
+    font-family: 'Outfit', sans-serif;
+    font-size: 2rem;
+    position: fixed;
+    bottom: 4rem;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 1rem;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.363);
+    border: none;
+}
+
+/* end music choice form*/
+
+/* ---------------css basket ------------------*/
+
+.basket {
+    display: none;
+}
+
+.basket:target {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--backgroundColor);
+    padding: 2rem;
+}
+
+.basket a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.basket a:visited {
+    color: var(--black);
+}
+
+.basket-close {
+    position: fixed;
+    bottom: 88%;
+    left: 88%;
+    transform: translate(-50%);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    background-color: var(--primaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    box-shadow: 0px 0px 15px 2px var(--backgroundColor);
+}
+
+.basket-close a {
+    margin-bottom: 0.2rem;
+}
+
+.basket-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.basket-div h1 {
+    align-self: center;
+}
+
+.basket form {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.basket-artists {
+    margin-bottom: 8rem;
+}
+
+.basket-content {
+    margin: 1rem;
+    font-size: 1.5rem;
+    color: var(--primaryColor);
+}
+
+.basket-content p {
+    overflow: hidden;
+}
+
+.basket-content p a {
+    color: var(--backgroundColor);
+    font-size: 2rem;
+}
+
+/*------------------end basket---------------*/
+
+/*------------------css Music----------------*/
+
+.main-track {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.checkbox-container{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.validate-music-search {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+}
+
+.music-searchbar{
+    height: 2rem;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.3rem;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.363);
+    margin-bottom: 5rem;
+    border: none;
+    max-width: 90vw;
+    align-self: center;
+}
+
+.validate-music-search label{
+    color: var(--primaryColor);
+}
+
+.validate-music-search h1{ 
+    font-size: 2rem;
+    color: var(--primaryColor);
+    align-self: center;
+}
+
+.submit-selected-music {
+    margin: 5rem;
+    font-family: 'Outfit', sans-serif;
+    font-size: 2rem;
+    padding: 1rem;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.363);
+    border: none;
+}
+
+
+.basket-button {
+    display: flex;
+    position:fixed;
+    right: 0;
+    top: 0;
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--secondaryColor);
+    padding: 0.5rem;
+    border-radius: 100%;
+}
+
+.basket-button a {
+    background-image: url(../images/mainboard.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white;
+
+}
+
+.basket-notification {
+    margin: 0.5rem;
+    background-color: red;
+    border-radius: 100%;
+}
